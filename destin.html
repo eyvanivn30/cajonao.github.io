@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Naga City Tourism | Destinations</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: "Inter", sans-serif;
+        background: #F4F1DE;
+        background-image: url('destinbg.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-graphic {
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 6px solid #222;
+    }
+
+    .header-graphic img {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .navbar {
+        opacity: 0.95;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .nav-item {
+        font-weight: 900 !important;
+        font-size: 16px;
+    }
+
+    .nav-link {
+        color: #333 !important;
+        padding: 6px 12px !important;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    .nav-link:hover {
+        background-color: #f3f3f3;
+        color: #139120 !important;
+    }
+
+    .navbar-nav {
+        gap: 20px;
+    }
+
+    section.container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .color {
+        color: #2F5233;
+    }
+
+    /* Card hover style for destinations */
+    .charsection {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .char-container {
+        position: relative;
+        display: flex;
+        width: 400px;
+        transition: all 0.5s ease;
+    }
+
+    .char {
+        width: 100%;
+        border-radius: 20px;
+        background-color: rgba(72, 171, 65, 0.7);
+        text-align: center;
+        padding: 15px;
+        box-shadow: 0 10px 30px rgba(0,61,8,0.5);
+        cursor: pointer;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        z-index: 2;
+    }
+
+    .char img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        position: absolute;
+        top: 0;
+        left: 80%;
+        width: 400px;
+        height: 100%;
+        background-color: #518f59;
+        color: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        opacity: 0;
+        transform: translateX(10px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        z-index: 1;
+        overflow-y: auto;
+        max-height: 100%;
+    }
+
+    .char-container:hover .char {
+        transform: translateX(-250px);
+        box-shadow: 0 12px 32px rgba(30, 125, 29, 0.8);
+    }
+
+    .char-container:hover .description {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    @media screen and (max-width: 900px) {
+        .char-container {
+            flex-direction: column;
+            width: 90%;
+        }
+        .char {
+            transform: none !important;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .description {
+            position: relative;
+            left: 0;
+            width: 100%;
+            opacity: 1 !important;
+            transform: none !important;
+            margin-top: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="header-graphic">
+    <img src="banner.webp" alt="Naga City Building" class="header-img">
+</div>
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-1">
+    <div class="container">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+            <ul class="navbar-nav gap-3 fw-semibold">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="food.html">Food</a></li>
+                <li class="nav-item"><a class="nav-link" href="destin.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="travel.html">Travel Guide</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container text-center">
+    <div class="color">
+        <h2 class="fw-bold display-5 mb-4">Welcome to Naga City</h2>
+        <p class="lead mx-auto mb-5" style="max-width: 900px;">
+            Discover the heart of Bicol—where culture, adventure, history, and flavor meet.
+            Naga City offers a unique blend of modern vibrance and rich heritage,
+            making it one of the top travel destinations in the Philippines.
+        </p>
+    </div>
+
+  
+    <div class="charsection">
+        <div class="char-container">
+            <div class="char">
+                <img src="1.webp" alt="Cathedral">
+                <hr>
+                <h1>Naga Metropolitan Cathedral</h1>
+            </div>
+            <div class="description">
+                <p>The Naga Metropolitan Cathedral, also known as the Basilica Minore de Nuestra Señora de Peñafrancia, is an iconic religious structure located in Naga City, Philippines. This majestic cathedral serves not just as a place of worship but also as a cultural and historical symbol for the local community.</p>
+                <p>Architecturally, the cathedral features a blend of neo-Gothic and modern design elements. Its vibrant blue and white facade, complemented by intricately designed stained-glass windows, draws the eyes of passersby. Inside, the cathedral is spacious and decorated with religious art, creating a serene atmosphere conducive to prayer and reflection.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="charsection">
+        <div class="char-container">
+            <div class="char">
+                <img src="2.webp" alt="Peñafrancia Basilica">
+                <hr>
+                <h1>Peñafrancia Basilica Minore</h1>
+            </div>
+            <div class="description">
+                <p>Peñafrancia Basilica Minore, located in Naga City, is a significant religious site and a centerpiece of devotion for many Catholics in the region. Dedicated to Our Lady of Peñafrancia, it attracts thousands of pilgrims each year during the Peñafrancia Festival.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="charsection">
+        <div class="char-container">
+            <div class="char">
+                <img src="3.webp" alt="Plaza Rizal">
+                <hr>
+                <h1>Plaza Rizal</h1>
+            </div>
+            <div class="description">
+                <p>Plaza Rizal, situated in the heart of Naga City, is a vibrant public square honoring Dr. José Rizal. It combines cultural significance with recreational space and lush landscaping.</p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<footer class="text-center py-3 bg-light">
+    &copy; 2025 Naga City Tourism
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
